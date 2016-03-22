@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00A0BBEB1CA13C5000026AFC /* BaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBD21CA13C5000026AFC /* BaiduMapViewController.m */; };
 		00A0BBEC1CA13C5000026AFC /* BlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBD51CA13C5000026AFC /* BlockModel.m */; };
 		00A0BBED1CA13C5000026AFC /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBD71CA13C5000026AFC /* BlockTest.m */; };
 		00A0BBEE1CA13C5000026AFC /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBD91CA13C5000026AFC /* BlockViewController.m */; };
@@ -38,8 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A0BBD11CA13C5000026AFC /* BaiduMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
-		00A0BBD21CA13C5000026AFC /* BaiduMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapViewController.m; sourceTree = "<group>"; };
 		00A0BBD41CA13C5000026AFC /* BlockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockModel.h; sourceTree = "<group>"; };
 		00A0BBD51CA13C5000026AFC /* BlockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockModel.m; sourceTree = "<group>"; };
 		00A0BBD61CA13C5000026AFC /* BlockTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTest.h; sourceTree = "<group>"; };
@@ -110,7 +107,6 @@
 		00A0BBCF1CA13C5000026AFC /* Before */ = {
 			isa = PBXGroup;
 			children = (
-				00A0BBD01CA13C5000026AFC /* BaiduMap */,
 				00A0BBD31CA13C5000026AFC /* Block */,
 				00A0BBDA1CA13C5000026AFC /* DatePicker */,
 				00A0BBE01CA13C5000026AFC /* Json */,
@@ -118,15 +114,6 @@
 				00A0BBE81CA13C5000026AFC /* TTTAttributedLabel */,
 			);
 			path = Before;
-			sourceTree = "<group>";
-		};
-		00A0BBD01CA13C5000026AFC /* BaiduMap */ = {
-			isa = PBXGroup;
-			children = (
-				00A0BBD11CA13C5000026AFC /* BaiduMapViewController.h */,
-				00A0BBD21CA13C5000026AFC /* BaiduMapViewController.m */,
-			);
-			path = BaiduMap;
 			sourceTree = "<group>";
 		};
 		00A0BBD31CA13C5000026AFC /* Block */ = {
@@ -289,7 +276,6 @@
 				6E6C49CB1BA8210800B88251 /* Frameworks */,
 				6E6C49CC1BA8210800B88251 /* Resources */,
 				6201D23A7605B3FDE51051D2 /* Copy Pods Resources */,
-				9267045887D77889AF7B8C72 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,21 +392,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9267045887D77889AF7B8C72 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -435,7 +406,6 @@
 				00A0BBF31CA13C5000026AFC /* KVOTest.m in Sources */,
 				00A0BBF41CA13C5000026AFC /* KVOTestViewController.m in Sources */,
 				00A0BBF51CA13C5000026AFC /* TTTAttributedLabelViewController.m in Sources */,
-				00A0BBEB1CA13C5000026AFC /* BaiduMapViewController.m in Sources */,
 				00A0BBED1CA13C5000026AFC /* BlockTest.m in Sources */,
 				00A0BBF21CA13C5000026AFC /* JsonTestViewController.m in Sources */,
 				00A0BBEE1CA13C5000026AFC /* BlockViewController.m in Sources */,
