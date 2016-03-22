@@ -17,6 +17,9 @@
 		00A0BBF31CA13C5000026AFC /* KVOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBE51CA13C5000026AFC /* KVOTest.m */; };
 		00A0BBF41CA13C5000026AFC /* KVOTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBE71CA13C5000026AFC /* KVOTestViewController.m */; };
 		00A0BBF51CA13C5000026AFC /* TTTAttributedLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBEA1CA13C5000026AFC /* TTTAttributedLabelViewController.m */; };
+		6E31AA311CA17894001F2687 /* AFNetworking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E31AA301CA17894001F2687 /* AFNetworking.storyboard */; };
+		6E31AA341CA178DF001F2687 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E31AA331CA178DF001F2687 /* AFNetworkingViewController.m */; };
+		6E31AA381CA17B9A001F2687 /* PublicData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E31AA371CA17B9A001F2687 /* PublicData.m */; };
 		6E6C49D41BA8210800B88251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6C49D31BA8210800B88251 /* main.m */; };
 		6E6C49D71BA8210800B88251 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E6C49D61BA8210800B88251 /* AppDelegate.mm */; };
 		6E6C49DD1BA8210800B88251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6C49DB1BA8210800B88251 /* Main.storyboard */; };
@@ -56,6 +59,11 @@
 		00A0BBE71CA13C5000026AFC /* KVOTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOTestViewController.m; sourceTree = "<group>"; };
 		00A0BBE91CA13C5000026AFC /* TTTAttributedLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabelViewController.h; sourceTree = "<group>"; };
 		00A0BBEA1CA13C5000026AFC /* TTTAttributedLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabelViewController.m; sourceTree = "<group>"; };
+		6E31AA301CA17894001F2687 /* AFNetworking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AFNetworking.storyboard; sourceTree = "<group>"; };
+		6E31AA321CA178DF001F2687 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
+		6E31AA331CA178DF001F2687 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
+		6E31AA361CA17B9A001F2687 /* PublicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicData.h; sourceTree = "<group>"; };
+		6E31AA371CA17B9A001F2687 /* PublicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicData.m; sourceTree = "<group>"; };
 		6E6C49CE1BA8210800B88251 /* TestPrj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPrj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6C49D21BA8210800B88251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E6C49D31BA8210800B88251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,14 +104,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00A0BBCE1CA13C5000026AFC /* After */ = {
-			isa = PBXGroup;
-			children = (
-				00A0BBF61CA13D2500026AFC /* AFNetworking */,
-			);
-			path = After;
-			sourceTree = "<group>";
-		};
 		00A0BBCF1CA13C5000026AFC /* Before */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,13 +170,6 @@
 			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
-		00A0BBF61CA13D2500026AFC /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
 		34BD1DF22DBB7DA1FA40CC99 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +186,33 @@
 				6E6C49DB1BA8210800B88251 /* Main.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		6E31AA2E1CA17863001F2687 /* After */ = {
+			isa = PBXGroup;
+			children = (
+				6E31AA2F1CA1787A001F2687 /* AFNetworking */,
+			);
+			path = After;
+			sourceTree = "<group>";
+		};
+		6E31AA2F1CA1787A001F2687 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				6E31AA301CA17894001F2687 /* AFNetworking.storyboard */,
+				6E31AA321CA178DF001F2687 /* AFNetworkingViewController.h */,
+				6E31AA331CA178DF001F2687 /* AFNetworkingViewController.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		6E31AA351CA17B78001F2687 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				6E31AA361CA17B9A001F2687 /* PublicData.h */,
+				6E31AA371CA17B9A001F2687 /* PublicData.m */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		6E6C49C51BA8210800B88251 = {
@@ -218,9 +238,10 @@
 		6E6C49D01BA8210800B88251 /* TestPrj */ = {
 			isa = PBXGroup;
 			children = (
-				00A0BBCE1CA13C5000026AFC /* After */,
 				00A0BBCF1CA13C5000026AFC /* Before */,
+				6E31AA2E1CA17863001F2687 /* After */,
 				6E2A379B1BF592DA00A220CD /* View */,
+				6E31AA351CA17B78001F2687 /* Public */,
 				6E6C49D51BA8210800B88251 /* AppDelegate.h */,
 				6E6C49D61BA8210800B88251 /* AppDelegate.mm */,
 				6E6C49DE1BA8210800B88251 /* Images.xcassets */,
@@ -348,6 +369,7 @@
 				6E6C49DD1BA8210800B88251 /* Main.storyboard in Resources */,
 				6E6C49E21BA8210800B88251 /* LaunchScreen.xib in Resources */,
 				00A0BBF01CA13C5000026AFC /* MyDatePickerView.xib in Resources */,
+				6E31AA311CA17894001F2687 /* AFNetworking.storyboard in Resources */,
 				6E6C49DF1BA8210800B88251 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,11 +421,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E31AA381CA17B9A001F2687 /* PublicData.m in Sources */,
 				00A0BBF11CA13C5000026AFC /* TestDatePickerViewController.m in Sources */,
 				00A0BBEC1CA13C5000026AFC /* BlockModel.m in Sources */,
 				6E6C49D71BA8210800B88251 /* AppDelegate.mm in Sources */,
 				00A0BBEF1CA13C5000026AFC /* MyDatePickerView.m in Sources */,
 				00A0BBF31CA13C5000026AFC /* KVOTest.m in Sources */,
+				6E31AA341CA178DF001F2687 /* AFNetworkingViewController.m in Sources */,
 				00A0BBF41CA13C5000026AFC /* KVOTestViewController.m in Sources */,
 				00A0BBF51CA13C5000026AFC /* TTTAttributedLabelViewController.m in Sources */,
 				00A0BBED1CA13C5000026AFC /* BlockTest.m in Sources */,
