@@ -17,6 +17,8 @@
 		00A0BBF31CA13C5000026AFC /* KVOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBE51CA13C5000026AFC /* KVOTest.m */; };
 		00A0BBF41CA13C5000026AFC /* KVOTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBE71CA13C5000026AFC /* KVOTestViewController.m */; };
 		00A0BBF51CA13C5000026AFC /* TTTAttributedLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBEA1CA13C5000026AFC /* TTTAttributedLabelViewController.m */; };
+		00B19C271CA2607F00B1AA96 /* FileDownloads.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B19C261CA2607F00B1AA96 /* FileDownloads.m */; };
+		00B19C3A1CA28DD100B1AA96 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B19C391CA28DD100B1AA96 /* CHCSVParser.m */; };
 		6E31AA311CA17894001F2687 /* AFNetworking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E31AA301CA17894001F2687 /* AFNetworking.storyboard */; };
 		6E31AA341CA178DF001F2687 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E31AA331CA178DF001F2687 /* AFNetworkingViewController.m */; };
 		6E31AA381CA17B9A001F2687 /* PublicData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E31AA371CA17B9A001F2687 /* PublicData.m */; };
@@ -59,6 +61,10 @@
 		00A0BBE71CA13C5000026AFC /* KVOTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOTestViewController.m; sourceTree = "<group>"; };
 		00A0BBE91CA13C5000026AFC /* TTTAttributedLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabelViewController.h; sourceTree = "<group>"; };
 		00A0BBEA1CA13C5000026AFC /* TTTAttributedLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabelViewController.m; sourceTree = "<group>"; };
+		00B19C251CA2607F00B1AA96 /* FileDownloads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloads.h; sourceTree = "<group>"; };
+		00B19C261CA2607F00B1AA96 /* FileDownloads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloads.m; sourceTree = "<group>"; };
+		00B19C381CA28DD100B1AA96 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		00B19C391CA28DD100B1AA96 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
 		6E31AA301CA17894001F2687 /* AFNetworking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AFNetworking.storyboard; sourceTree = "<group>"; };
 		6E31AA321CA178DF001F2687 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
 		6E31AA331CA178DF001F2687 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
@@ -170,6 +176,15 @@
 			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
+		00B19C371CA28DD100B1AA96 /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				00B19C381CA28DD100B1AA96 /* CHCSVParser.h */,
+				00B19C391CA28DD100B1AA96 /* CHCSVParser.m */,
+			);
+			path = CHCSVParser;
+			sourceTree = "<group>";
+		};
 		34BD1DF22DBB7DA1FA40CC99 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +224,9 @@
 		6E31AA351CA17B78001F2687 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				00B19C371CA28DD100B1AA96 /* CHCSVParser */,
+				00B19C251CA2607F00B1AA96 /* FileDownloads.h */,
+				00B19C261CA2607F00B1AA96 /* FileDownloads.m */,
 				6E31AA361CA17B9A001F2687 /* PublicData.h */,
 				6E31AA371CA17B9A001F2687 /* PublicData.m */,
 			);
@@ -297,6 +315,7 @@
 				6E6C49CB1BA8210800B88251 /* Frameworks */,
 				6E6C49CC1BA8210800B88251 /* Resources */,
 				6201D23A7605B3FDE51051D2 /* Copy Pods Resources */,
+				9DE027A613831BC7441D4D3F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,6 +433,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9DE027A613831BC7441D4D3F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -426,8 +460,10 @@
 				00A0BBEC1CA13C5000026AFC /* BlockModel.m in Sources */,
 				6E6C49D71BA8210800B88251 /* AppDelegate.mm in Sources */,
 				00A0BBEF1CA13C5000026AFC /* MyDatePickerView.m in Sources */,
+				00B19C271CA2607F00B1AA96 /* FileDownloads.m in Sources */,
 				00A0BBF31CA13C5000026AFC /* KVOTest.m in Sources */,
 				6E31AA341CA178DF001F2687 /* AFNetworkingViewController.m in Sources */,
+				00B19C3A1CA28DD100B1AA96 /* CHCSVParser.m in Sources */,
 				00A0BBF41CA13C5000026AFC /* KVOTestViewController.m in Sources */,
 				00A0BBF51CA13C5000026AFC /* TTTAttributedLabelViewController.m in Sources */,
 				00A0BBED1CA13C5000026AFC /* BlockTest.m in Sources */,

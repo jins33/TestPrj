@@ -8,7 +8,12 @@
 
 #import "AFNetworkingViewController.h"
 #import "PublicData.h"
+#import "FileDownloads.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
 #define CSV_URL_UPDATE @"http://www.aiu.co.jp/travel/spapp/update_info.csv"
+#define CSV_URL_WHATNEW @"http://www.aiu.co.jp/travel/spapp/whatnew.csv"
+#define CSV_URL_HOSPITALLIST @"http://www.aiu.co.jp/travel/spapp/hospitallist.csv"
 
 @interface AFNetworkingViewController ()
 
@@ -18,21 +23,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //afnetworking
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    // 不加上这句话，会报“Request failed: unacceptable content-type: text/plain”错误
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-
-    [manager GET:CSV_URL_UPDATE parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        NSLog(@"progress");
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject){
-        NSString *path = [[PublicData manage] documentsPath];
-        NSLog(@"path %@", path);
-        path = [path stringByAppendingString:@"/update_info.csv"];
-        [[PublicData manage] writeData:responseObject withFilePath:path];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"failure");
+    __block int64_t preUnitCount = 0;
+    __block int64_t increaseUnitCount = 0;
+    
+    [[FileDownloads manager] GET:CSV_URL_UPDATE parameters:nil progress:^(NSProgress * _Nullable downloadProgress) {
+        //        NSLog(@"totalUnitCount %lld", downloadProgress.totalUnitCount);
+        [RACObserve(downloadProgress, completedUnitCount) subscribeNext:^(id x) {
+            int64_t currUnitCount = [x intValue];
+            increaseUnitCount = currUnitCount - preUnitCount;
+            preUnitCount = currUnitCount;
+            if (increaseUnitCount != 0) {
+                NSLog(@"x %@", x);
+                NSLog(@"increaseUnitCount %lld", increaseUnitCount);
+            }
+        }];
+    } success:^(NSString *filePath){
+        NSLog(@"数据保存成功");
+    } failure:^(NSString * _Nullable failInfo) {
+        NSLog(@"%@", failInfo);
     }];
 }
 
