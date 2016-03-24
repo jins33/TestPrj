@@ -21,9 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    manager = [CoreDataManager manage];
+    manager = [CoreDataManager manager];
     [manager initContext];
-    tableArray = [manager queryEntity:@"Person" withCondition:@""];
+    tableArray = [manager queryEntityName:@"Person" withCondition:@""];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,12 +53,11 @@
 
 - (IBAction)saveData:(id)sender {
     Person *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:manager.context];
-    [person setValue:_nameText.text forKey:@"name"];
-//    person.name = _nameText.text;
+    person.name = _nameText.text;
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
     person.age = [numberFormatter numberFromString:_ageText.text];
     [manager saveContext];
-    tableArray = [manager queryEntity:@"Person" withCondition:@""];
+    tableArray = [manager queryEntityName:@"Person" withCondition:@""];
     [self.tableView reloadData];
 }
 @end

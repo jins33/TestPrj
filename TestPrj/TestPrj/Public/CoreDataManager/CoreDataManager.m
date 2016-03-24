@@ -7,11 +7,11 @@
 //
 
 #import "CoreDataManager.h"
-#define MODELNAME @"TestPrj"
+#define MODELNAME @"Aiugo"
 
 @implementation CoreDataManager
 
-+ (instancetype)manage{
++ (instancetype)manager{
     static id sharedInstance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -31,7 +31,7 @@
     NSPersistentStoreCoordinator *psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:_managedObjectModel];
     // 构建SQLite数据库文件的路径
     NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    NSURL *url = [NSURL fileURLWithPath:[doc stringByAppendingPathComponent:@"person.sqlite"]];
+    NSURL *url = [NSURL fileURLWithPath:[doc stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.sqlite", MODELNAME]]];
     NSLog(@"path: %@", [url relativeString]);
     
     // 添加持久化存储库，这里使用SQLite作为存储库
@@ -55,9 +55,17 @@
     }
 }
 
+//清空实体表内容
+- (void)clearEntityTable:(NSString *)entityName{
+    NSArray *entityArray = [self queryEntityName:entityName withCondition:@""];
+    for (NSManagedObject *obj in entityArray) {
+        [_context deleteObject:obj];
+    }
+    [self saveContext];
+}
 
-//查询语句
-- (NSArray *)queryEntity:(NSString *)entityName withCondition:(NSString *)condition{
+//按条件查询
+- (NSArray *)queryEntityName:(NSString *)entityName withCondition:(NSString *)condition{
     
     NSError *error = nil;
     

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="Ad" representedClassName="Ad" syncable="YES">
+        <attribute name="adtext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="adtype" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Hospitallist" representedClassName="Hospital" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="area" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hospital" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="map_flag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opendate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state_city" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Update_info" representedClassName="Update_info" syncable="YES">
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="update" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Whatnew" representedClassName="Whatnew" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Ad" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Hospitallist" positionX="-54" positionY="-9" width="128" height="195"/>
+        <element name="Update_info" positionX="-36" positionY="9" width="128" height="105"/>
+        <element name="Whatnew" positionX="-18" positionY="27" width="128" height="105"/>
+    </elements>
+</model>

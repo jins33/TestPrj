@@ -15,12 +15,16 @@
 @property NSManagedObjectContext *context;
 @property NSManagedObjectModel *managedObjectModel;
 
-+(instancetype)manage;
++(instancetype)manager;
 
 - (void)initContext;
 
 -(void)saveContext;
 
-- (NSArray *)queryEntity:(NSString *) entityName withCondition:(NSString *) condition;
+//按条件查询
+- (NSArray *)queryEntityName:(NSString *)entityName withCondition:(NSString *)condition;
+
+//清空实体表内容
+- (void)clearEntityTable:(NSString *)entityName;
 
 @end

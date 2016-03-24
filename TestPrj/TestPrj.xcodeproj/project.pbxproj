@@ -17,7 +17,6 @@
 		00A0BBF31CA13C5000026AFC /* KVOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBE51CA13C5000026AFC /* KVOTest.m */; };
 		00A0BBF41CA13C5000026AFC /* KVOTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBE71CA13C5000026AFC /* KVOTestViewController.m */; };
 		00A0BBF51CA13C5000026AFC /* TTTAttributedLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBEA1CA13C5000026AFC /* TTTAttributedLabelViewController.m */; };
-		00A52C141CA374FB00D329C8 /* MyCSVDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A52C131CA374FB00D329C8 /* MyCSVDataParser.m */; };
 		00A52C621CA3CE5E00D329C8 /* NSString+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A52C611CA3CE5E00D329C8 /* NSString+Custom.m */; };
 		00A52CD31CA3ED4A00D329C8 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A52CD21CA3ED4900D329C8 /* CoreDataManager.m */; };
 		00A52CDD1CA3EE2900D329C8 /* CoreData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A52CDA1CA3EE2900D329C8 /* CoreData.storyboard */; };
@@ -40,6 +39,17 @@
 		6E6C49DF1BA8210800B88251 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6C49DE1BA8210800B88251 /* Images.xcassets */; };
 		6E6C49E21BA8210800B88251 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6C49E01BA8210800B88251 /* LaunchScreen.xib */; };
 		6E6C49EE1BA8210800B88251 /* TestPrjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6C49ED1BA8210800B88251 /* TestPrjTests.m */; };
+		6ED057781CA41DDE002B5239 /* Whatnew+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED057691CA41DDE002B5239 /* Whatnew+CoreDataProperties.m */; };
+		6ED057791CA41DDE002B5239 /* Whatnew.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0576B1CA41DDE002B5239 /* Whatnew.m */; };
+		6ED0577A1CA41DDE002B5239 /* Ad+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0576D1CA41DDE002B5239 /* Ad+CoreDataProperties.m */; };
+		6ED0577B1CA41DDE002B5239 /* Ad.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0576F1CA41DDE002B5239 /* Ad.m */; };
+		6ED0577C1CA41DDE002B5239 /* Hospital+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED057711CA41DDE002B5239 /* Hospital+CoreDataProperties.m */; };
+		6ED0577D1CA41DDE002B5239 /* Hospital.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED057731CA41DDE002B5239 /* Hospital.m */; };
+		6ED0577E1CA41DDE002B5239 /* Update_info+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED057751CA41DDE002B5239 /* Update_info+CoreDataProperties.m */; };
+		6ED0577F1CA41DDE002B5239 /* Update_info.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED057771CA41DDE002B5239 /* Update_info.m */; };
+		6ED057821CA4207D002B5239 /* CoreDataSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED057811CA4207D002B5239 /* CoreDataSave.m */; };
+		6ED057851CA420CE002B5239 /* MyCSVDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED057841CA420CE002B5239 /* MyCSVDataParser.m */; };
+		6ED0578B1CA42997002B5239 /* Aiugo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ED057891CA42997002B5239 /* Aiugo.xcdatamodeld */; };
 		F3BFB7A7F0AED26C315DA340 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E73C94E7896D58113EA3C7B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,8 +83,6 @@
 		00A0BBE71CA13C5000026AFC /* KVOTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOTestViewController.m; sourceTree = "<group>"; };
 		00A0BBE91CA13C5000026AFC /* TTTAttributedLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabelViewController.h; sourceTree = "<group>"; };
 		00A0BBEA1CA13C5000026AFC /* TTTAttributedLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabelViewController.m; sourceTree = "<group>"; };
-		00A52C121CA374FB00D329C8 /* MyCSVDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCSVDataParser.h; sourceTree = "<group>"; };
-		00A52C131CA374FB00D329C8 /* MyCSVDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCSVDataParser.m; sourceTree = "<group>"; };
 		00A52C601CA3CE5E00D329C8 /* NSString+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Custom.h"; sourceTree = "<group>"; };
 		00A52C611CA3CE5E00D329C8 /* NSString+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Custom.m"; sourceTree = "<group>"; };
 		00A52CD11CA3ED4900D329C8 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
@@ -116,6 +124,27 @@
 		6E6C49EC1BA8210800B88251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E6C49ED1BA8210800B88251 /* TestPrjTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPrjTests.m; sourceTree = "<group>"; };
 		6E8703651BAA59AB00C2B128 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6ED057681CA41DDE002B5239 /* Whatnew+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Whatnew+CoreDataProperties.h"; sourceTree = "<group>"; };
+		6ED057691CA41DDE002B5239 /* Whatnew+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Whatnew+CoreDataProperties.m"; sourceTree = "<group>"; };
+		6ED0576A1CA41DDE002B5239 /* Whatnew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Whatnew.h; sourceTree = "<group>"; };
+		6ED0576B1CA41DDE002B5239 /* Whatnew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Whatnew.m; sourceTree = "<group>"; };
+		6ED0576C1CA41DDE002B5239 /* Ad+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ad+CoreDataProperties.h"; sourceTree = "<group>"; };
+		6ED0576D1CA41DDE002B5239 /* Ad+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ad+CoreDataProperties.m"; sourceTree = "<group>"; };
+		6ED0576E1CA41DDE002B5239 /* Ad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ad.h; sourceTree = "<group>"; };
+		6ED0576F1CA41DDE002B5239 /* Ad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ad.m; sourceTree = "<group>"; };
+		6ED057701CA41DDE002B5239 /* Hospital+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Hospital+CoreDataProperties.h"; sourceTree = "<group>"; };
+		6ED057711CA41DDE002B5239 /* Hospital+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Hospital+CoreDataProperties.m"; sourceTree = "<group>"; };
+		6ED057721CA41DDE002B5239 /* Hospital.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hospital.h; sourceTree = "<group>"; };
+		6ED057731CA41DDE002B5239 /* Hospital.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hospital.m; sourceTree = "<group>"; };
+		6ED057741CA41DDE002B5239 /* Update_info+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Update_info+CoreDataProperties.h"; sourceTree = "<group>"; };
+		6ED057751CA41DDE002B5239 /* Update_info+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Update_info+CoreDataProperties.m"; sourceTree = "<group>"; };
+		6ED057761CA41DDE002B5239 /* Update_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update_info.h; sourceTree = "<group>"; };
+		6ED057771CA41DDE002B5239 /* Update_info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Update_info.m; sourceTree = "<group>"; };
+		6ED057801CA4207D002B5239 /* CoreDataSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataSave.h; sourceTree = "<group>"; };
+		6ED057811CA4207D002B5239 /* CoreDataSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataSave.m; sourceTree = "<group>"; };
+		6ED057831CA420CE002B5239 /* MyCSVDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCSVDataParser.h; sourceTree = "<group>"; };
+		6ED057841CA420CE002B5239 /* MyCSVDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCSVDataParser.m; sourceTree = "<group>"; };
+		6ED0578A1CA42997002B5239 /* Aiugo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aiugo.xcdatamodel; sourceTree = "<group>"; };
 		6ED17EF81C102F5E00978BCF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		6ED17EF91C102F5E00978BCF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		6ED17EFA1C102FA700978BCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -222,6 +251,8 @@
 		00A52C811CA3D9C700D329C8 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				6ED057801CA4207D002B5239 /* CoreDataSave.h */,
+				6ED057811CA4207D002B5239 /* CoreDataSave.m */,
 				00A52CD91CA3EE2900D329C8 /* View */,
 				00A52C841CA3DA6900D329C8 /* Model */,
 			);
@@ -243,6 +274,22 @@
 				00A52CE81CA3EE7800D329C8 /* Score+CoreDataProperties.m */,
 				00A52CE91CA3EE7800D329C8 /* Score.h */,
 				00A52CEA1CA3EE7800D329C8 /* Score.m */,
+				6ED057681CA41DDE002B5239 /* Whatnew+CoreDataProperties.h */,
+				6ED057691CA41DDE002B5239 /* Whatnew+CoreDataProperties.m */,
+				6ED0576A1CA41DDE002B5239 /* Whatnew.h */,
+				6ED0576B1CA41DDE002B5239 /* Whatnew.m */,
+				6ED0576C1CA41DDE002B5239 /* Ad+CoreDataProperties.h */,
+				6ED0576D1CA41DDE002B5239 /* Ad+CoreDataProperties.m */,
+				6ED0576E1CA41DDE002B5239 /* Ad.h */,
+				6ED0576F1CA41DDE002B5239 /* Ad.m */,
+				6ED057701CA41DDE002B5239 /* Hospital+CoreDataProperties.h */,
+				6ED057711CA41DDE002B5239 /* Hospital+CoreDataProperties.m */,
+				6ED057721CA41DDE002B5239 /* Hospital.h */,
+				6ED057731CA41DDE002B5239 /* Hospital.m */,
+				6ED057741CA41DDE002B5239 /* Update_info+CoreDataProperties.h */,
+				6ED057751CA41DDE002B5239 /* Update_info+CoreDataProperties.m */,
+				6ED057761CA41DDE002B5239 /* Update_info.h */,
+				6ED057771CA41DDE002B5239 /* Update_info.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,10 +316,10 @@
 		00B19C371CA28DD100B1AA96 /* CHCSVParser */ = {
 			isa = PBXGroup;
 			children = (
+				6ED057831CA420CE002B5239 /* MyCSVDataParser.h */,
+				6ED057841CA420CE002B5239 /* MyCSVDataParser.m */,
 				00B19C381CA28DD100B1AA96 /* CHCSVParser.h */,
 				00B19C391CA28DD100B1AA96 /* CHCSVParser.m */,
-				00A52C121CA374FB00D329C8 /* MyCSVDataParser.h */,
-				00A52C131CA374FB00D329C8 /* MyCSVDataParser.m */,
 			);
 			path = CHCSVParser;
 			sourceTree = "<group>";
@@ -360,6 +407,7 @@
 				6E6C49DE1BA8210800B88251 /* Images.xcassets */,
 				6E6C49D11BA8210800B88251 /* Supporting Files */,
 				00A52CF41CA3F17400D329C8 /* TestPrj.xcdatamodeld */,
+				6ED057891CA42997002B5239 /* Aiugo.xcdatamodeld */,
 			);
 			path = TestPrj;
 			sourceTree = "<group>";
@@ -411,7 +459,6 @@
 				6E6C49CB1BA8210800B88251 /* Frameworks */,
 				6E6C49CC1BA8210800B88251 /* Resources */,
 				6201D23A7605B3FDE51051D2 /* Copy Pods Resources */,
-				9DE027A613831BC7441D4D3F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -530,21 +577,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9DE027A613831BC7441D4D3F /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -557,11 +589,13 @@
 				00A0BBF11CA13C5000026AFC /* TestDatePickerViewController.m in Sources */,
 				00A0BBEC1CA13C5000026AFC /* BlockModel.m in Sources */,
 				6E6C49D71BA8210800B88251 /* AppDelegate.mm in Sources */,
+				6ED0577B1CA41DDE002B5239 /* Ad.m in Sources */,
 				00A0BBEF1CA13C5000026AFC /* MyDatePickerView.m in Sources */,
-				00A52C141CA374FB00D329C8 /* MyCSVDataParser.m in Sources */,
 				00B19C271CA2607F00B1AA96 /* FileDownloads.m in Sources */,
+				6ED057821CA4207D002B5239 /* CoreDataSave.m in Sources */,
 				00A0BBF31CA13C5000026AFC /* KVOTest.m in Sources */,
 				00A52CEE1CA3EE7800D329C8 /* Card.m in Sources */,
+				6ED0577D1CA41DDE002B5239 /* Hospital.m in Sources */,
 				6E31AA341CA178DF001F2687 /* AFNetworkingViewController.m in Sources */,
 				00B19C3A1CA28DD100B1AA96 /* CHCSVParser.m in Sources */,
 				00A0BBF41CA13C5000026AFC /* KVOTestViewController.m in Sources */,
@@ -569,15 +603,23 @@
 				00A0BBF51CA13C5000026AFC /* TTTAttributedLabelViewController.m in Sources */,
 				00A0BBED1CA13C5000026AFC /* BlockTest.m in Sources */,
 				00A52C621CA3CE5E00D329C8 /* NSString+Custom.m in Sources */,
+				6ED0578B1CA42997002B5239 /* Aiugo.xcdatamodeld in Sources */,
 				00A52CEB1CA3EE7800D329C8 /* Person+CoreDataProperties.m in Sources */,
 				00A52CD31CA3ED4A00D329C8 /* CoreDataManager.m in Sources */,
+				6ED0577F1CA41DDE002B5239 /* Update_info.m in Sources */,
 				00A0BBF21CA13C5000026AFC /* JsonTestViewController.m in Sources */,
+				6ED0577E1CA41DDE002B5239 /* Update_info+CoreDataProperties.m in Sources */,
+				6ED057781CA41DDE002B5239 /* Whatnew+CoreDataProperties.m in Sources */,
 				00A52CF61CA3F17400D329C8 /* TestPrj.xcdatamodeld in Sources */,
+				6ED0577C1CA41DDE002B5239 /* Hospital+CoreDataProperties.m in Sources */,
 				00A52CF01CA3EE7900D329C8 /* Score.m in Sources */,
 				00A0BBEE1CA13C5000026AFC /* BlockViewController.m in Sources */,
 				6E6C49D41BA8210800B88251 /* main.m in Sources */,
 				00A52CEC1CA3EE7800D329C8 /* Person.m in Sources */,
+				6ED0577A1CA41DDE002B5239 /* Ad+CoreDataProperties.m in Sources */,
 				00A52CEF1CA3EE7800D329C8 /* Score+CoreDataProperties.m in Sources */,
+				6ED057851CA420CE002B5239 /* MyCSVDataParser.m in Sources */,
+				6ED057791CA41DDE002B5239 /* Whatnew.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,6 +843,16 @@
 			);
 			currentVersion = 00A52CF51CA3F17400D329C8 /* TestPrj.xcdatamodel */;
 			path = TestPrj.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		6ED057891CA42997002B5239 /* Aiugo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6ED0578A1CA42997002B5239 /* Aiugo.xcdatamodel */,
+			);
+			currentVersion = 6ED0578A1CA42997002B5239 /* Aiugo.xcdatamodel */;
+			path = Aiugo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
