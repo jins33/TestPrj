@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001F41A31CAE4CFB00AC9438 /* JustTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001F41A21CAE4CFB00AC9438 /* JustTest.storyboard */; };
+		001F41A61CAE4D1A00AC9438 /* JustTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001F41A51CAE4D1A00AC9438 /* JustTestViewController.m */; };
 		00A0BBEC1CA13C5000026AFC /* BlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBD51CA13C5000026AFC /* BlockModel.m */; };
 		00A0BBED1CA13C5000026AFC /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBD71CA13C5000026AFC /* BlockTest.m */; };
 		00A0BBEE1CA13C5000026AFC /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0BBD91CA13C5000026AFC /* BlockViewController.m */; };
@@ -64,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001F41A21CAE4CFB00AC9438 /* JustTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JustTest.storyboard; sourceTree = "<group>"; };
+		001F41A41CAE4D1A00AC9438 /* JustTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustTestViewController.h; sourceTree = "<group>"; };
+		001F41A51CAE4D1A00AC9438 /* JustTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustTestViewController.m; sourceTree = "<group>"; };
 		00A0BBD41CA13C5000026AFC /* BlockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockModel.h; sourceTree = "<group>"; };
 		00A0BBD51CA13C5000026AFC /* BlockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockModel.m; sourceTree = "<group>"; };
 		00A0BBD61CA13C5000026AFC /* BlockTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTest.h; sourceTree = "<group>"; };
@@ -173,6 +178,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001F41A11CAE4CE800AC9438 /* JustTest */ = {
+			isa = PBXGroup;
+			children = (
+				001F41A21CAE4CFB00AC9438 /* JustTest.storyboard */,
+				001F41A41CAE4D1A00AC9438 /* JustTestViewController.h */,
+				001F41A51CAE4D1A00AC9438 /* JustTestViewController.m */,
+			);
+			path = JustTest;
+			sourceTree = "<group>";
+		};
 		00A0BBCF1CA13C5000026AFC /* Before */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +413,7 @@
 		6E6C49D01BA8210800B88251 /* TestPrj */ = {
 			isa = PBXGroup;
 			children = (
+				001F41A11CAE4CE800AC9438 /* JustTest */,
 				00A0BBCF1CA13C5000026AFC /* Before */,
 				6E31AA2E1CA17863001F2687 /* After */,
 				6E2A379B1BF592DA00A220CD /* View */,
@@ -459,6 +475,7 @@
 				6E6C49CB1BA8210800B88251 /* Frameworks */,
 				6E6C49CC1BA8210800B88251 /* Resources */,
 				6201D23A7605B3FDE51051D2 /* Copy Pods Resources */,
+				5BD99C7E6E891CD276D527BB /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -528,6 +545,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001F41A31CAE4CFB00AC9438 /* JustTest.storyboard in Resources */,
 				6E6C49DD1BA8210800B88251 /* Main.storyboard in Resources */,
 				6E6C49E21BA8210800B88251 /* LaunchScreen.xib in Resources */,
 				00A0BBF01CA13C5000026AFC /* MyDatePickerView.xib in Resources */,
@@ -547,6 +565,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5BD99C7E6E891CD276D527BB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6003D2D20A988B4F6BF5BD7E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -606,6 +639,7 @@
 				6ED0578B1CA42997002B5239 /* Aiugo.xcdatamodeld in Sources */,
 				00A52CEB1CA3EE7800D329C8 /* Person+CoreDataProperties.m in Sources */,
 				00A52CD31CA3ED4A00D329C8 /* CoreDataManager.m in Sources */,
+				001F41A61CAE4D1A00AC9438 /* JustTestViewController.m in Sources */,
 				6ED0577F1CA41DDE002B5239 /* Update_info.m in Sources */,
 				00A0BBF21CA13C5000026AFC /* JsonTestViewController.m in Sources */,
 				6ED0577E1CA41DDE002B5239 /* Update_info+CoreDataProperties.m in Sources */,
