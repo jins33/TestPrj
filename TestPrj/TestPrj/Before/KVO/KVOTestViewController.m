@@ -27,7 +27,7 @@
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     if ([keyPath isEqualToString:@"testVal"]) {
-        NSLog(@"112233");
+        NSLog(@"It Works");
         _testLabel.text = [_testBean valueForKey:@"testVal"];
     }
 }
