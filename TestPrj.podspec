@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   
-  s.source_files = 'TestPrj/TestPrj/TestPrj/Public/CHCSVParser/*.{h,m}'
+  s.source_files = 'TestPrj/TestPrj/Public/CHCSVParser/*.{h,m}'
   s.resources = 'TestPrj/TestPrj/TestPrj/Public/CHCSVParser/*.{h,m}'
 
 end
