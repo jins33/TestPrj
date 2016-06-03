@@ -9,6 +9,10 @@
 #import "PersonTableViewController.h"
 #import "CoreDataManager.h"
 #import "Person.h"
+#import "CoreDataCell.h"
+
+#define CELLID @"coreDataCell"
+#define NIBNAME @"CoreDataCell"
 
 @interface PersonTableViewController ()
 
@@ -24,6 +28,8 @@
     manager = [CoreDataManager manager];
     [manager initContext];
     tableArray = [manager queryEntityName:@"Person" withCondition:@""];
+    //注册cell
+    [self.tableView registerNib:[UINib nibWithNibName:NIBNAME bundle:nil] forCellReuseIdentifier:CELLID];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,13 +49,16 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"personCell" forIndexPath:indexPath];
+    CoreDataCell *cell = [tableView dequeueReusableCellWithIdentifier:CELLID];
     Person *person = tableArray[indexPath.row];
-    cell.textLabel.text = person.name;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", person.age];
+    cell.titleLbl.text = person.name;
+    cell.subTitleLbl.text =[NSString stringWithFormat:@"%@", person.age];
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 75;
+}
 
 - (IBAction)saveData:(id)sender {
     Person *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:manager.context];

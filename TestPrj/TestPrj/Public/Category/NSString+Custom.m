@@ -18,4 +18,8 @@
     return NO;
 }
 
+- (void)addProperty{
+    objc_setAssociatedObject(self, @"test", @"JustForTest, You know!", OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 @end

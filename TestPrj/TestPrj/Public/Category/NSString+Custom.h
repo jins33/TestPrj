@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 
 @interface NSString (Custom)
 
 //判断字串是否为空
 -(BOOL)isEmpty;
+
+- (void)addProperty;
 
 @end

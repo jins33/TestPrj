@@ -7,7 +7,7 @@
 //
 
 #import "CoreDataManager.h"
-#define MODELNAME @"Aiugo"
+#define MODELNAME @"TestPrj"
 
 @implementation CoreDataManager
 
@@ -29,9 +29,10 @@
     }
     // 传入模型对象，初始化NSPersistentStoreCoordinator
     NSPersistentStoreCoordinator *psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:_managedObjectModel];
+    
     // 构建SQLite数据库文件的路径
-    NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    NSURL *url = [NSURL fileURLWithPath:[doc stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.sqlite", MODELNAME]]];
+    NSString *resourcePath = [[NSBundle mainBundle] resourcePath];
+    NSURL *url = [NSURL fileURLWithPath:[resourcePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.sqlite", MODELNAME]]];
     NSLog(@"path: %@", [url relativeString]);
     
     // 添加持久化存储库，这里使用SQLite作为存储库

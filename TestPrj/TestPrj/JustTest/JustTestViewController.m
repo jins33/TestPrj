@@ -7,6 +7,7 @@
 //
 
 #import "JustTestViewController.h"
+#import "NSString+Custom.h"
 
 @interface JustTestViewController ()
 
@@ -15,24 +16,10 @@
 @implementation JustTestViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    NSLog(@"JustTestOne");
-    // Do any additional setup after loading the view.
+    NSString *str = @"123456";
+    [str addProperty];
+    NSString *testStr = objc_getAssociatedObject(str, @"test");
+    NSLog(@"testStr %@", testStr);
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

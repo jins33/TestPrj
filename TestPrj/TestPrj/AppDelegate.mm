@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BlockTest.h"
+#import <IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[IQKeyboardManager sharedManager] setEnable:YES];
     return YES;
 }
 
