@@ -27,9 +27,7 @@
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     // 不加上这句话，会报“Request failed: unacceptable content-type: text/plain”错误
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    [manager GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull dp) {
-        downloadProgress(dp);
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [manager GET:URLString parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSString *fileName = [URLString lastPathComponent];
         NSString *filePath = [[self documentsPath] stringByAppendingString:[NSString stringWithFormat:@"/%@", fileName]];
         NSLog(@"下载成功 %@", filePath);
@@ -40,7 +38,6 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(@"下载失败");
     }];
-    
 }
 
 - (void)writeData:(NSData *)data withFilePath:(NSString *)filePath success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock{

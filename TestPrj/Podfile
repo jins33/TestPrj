@@ -1,9 +1,11 @@
-platform :ios, '7.0'
-
-pod 'Masonry'
-pod 'ReactiveCocoa'
-pod 'AFNetworking'
-pod 'TTTAttributedLabel'
-pod 'IQKeyboardManager'
-pod 'MJExtension'
-pod 'Qiniu', '~> 7.0'
+platform :ios, '8.4'
+use_frameworks!
+target "TestPrj" do
+	pod 'Masonry'
+	pod 'ReactiveCocoa'
+	pod 'AFNetworking'
+	pod 'TTTAttributedLabel'
+	pod 'IQKeyboardManager'
+	pod 'MJExtension'
+	pod 'Qiniu', '~> 7.0'
+end

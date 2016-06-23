@@ -8,7 +8,7 @@
 
 #import "MJExtensionTestCtl.h"
 #import "PopCellObj.h"
-#import <MJExtension.h>
+#import <MJExtension/MJExtension.h>
 
 @interface MJExtensionTestCtl ()
 

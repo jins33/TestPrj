@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ReactiveCocoa.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface RACViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *myTextField;
